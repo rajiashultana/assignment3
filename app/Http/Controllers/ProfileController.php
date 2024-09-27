@@ -20,7 +20,7 @@ class ProfileController extends Controller
 
         );
 
-            $cookie_name = 'access_token';
+            $name = 'access_token';
             $value = '123-XYZ';
             $minute = 1;
             $path = '/';
@@ -30,7 +30,7 @@ class ProfileController extends Controller
 
 
         return response($data,200)->cookie(
-            $cookie_name, $value, $minute, $path, $domain, $secure, $httpOnly);
+            $name, $value, $minute, $path, $domain, $secure, $httpOnly);
     }
 
 }
